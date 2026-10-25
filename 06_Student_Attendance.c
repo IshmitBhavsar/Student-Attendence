@@ -71,7 +71,7 @@ static int read_integer(const char *prompt)
     if (scanf("%d", value) != 1)
     {
         discard_line();
-        return -1;
+        return 0;
     }
     discard_line();
     return value;
@@ -84,7 +84,7 @@ static double read_number(const char *prompt)
     if (scanf("%f", &value) != 1)
     {
         discard_line();
-        return -1;
+        return 0;
     }
     discard_line();
     return value;
