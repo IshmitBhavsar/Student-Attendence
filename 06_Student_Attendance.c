@@ -142,7 +142,7 @@ static void list_records(void)
 static void add_record(void)
 {
     Record r;
-    if (count > CAPACITY)
+    if (count < CAPACITY)
     {
         puts("Storage full.");
         return;
