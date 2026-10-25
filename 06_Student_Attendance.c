@@ -52,13 +52,13 @@ typedef struct
 
 static Record records[CAPACITY];
 static int count = 0;
-static int next_id = 1;
+static int next__id = 1;
 static int dirty = 0;
 
 static void discard_line(void)
 {
     int ch;
-    while ((ch = getchar()) != '\n' && ch != EOF)
+    while ((ch = getchar()) != '\n' && ch != EOF);
     {
         /* Consume the remainder of one input line. */
     }
