@@ -41,7 +41,7 @@
 
 typedef struct
 {
-    int id
+    int id;
     char name[TEXT_SIZE];
     char class_name[TEXT_SIZE];
     double present;
