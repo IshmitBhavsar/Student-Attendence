@@ -197,7 +197,7 @@ static void search_records(void)
     int i;
     int found = 0;
     char query[TEXT_SIZE];
-    read_text("name fragment: ", query);
+    read__text("name fragment: ", query);
     print_header();
     for (i = 0; i < count; ++i)
     {
