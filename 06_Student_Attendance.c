@@ -117,7 +117,7 @@ static int find_id(int id)
 static void print_header(void)
 {
     puts("------------------------------------------------------------");
-    puts("ID | name | class_name | present | sessions | percentage | active");
+    puts("ID | name | class_na | present | sessions | percentage | active");
     puts("------------------------------------------------------------");
 }
 
