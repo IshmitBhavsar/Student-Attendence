@@ -77,7 +77,7 @@ static int read_integer(const char *prompt)
     return value;
 }
 
-static double read_number(const char *prompt)
+static double read_number(const char prompt)
 {
     double value;
     printf("%s", prompt);
