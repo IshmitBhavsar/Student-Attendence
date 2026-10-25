@@ -28,7 +28,7 @@
  * Keep all array accesses inside the storage capacity.
  * Check all file operations and close opened streams.
  * Define sensible validation rules for this domain.
- * Use fictional local data while testing.
+ 
  */
 #include <stdio.h>
 #include <stdlib.h>
