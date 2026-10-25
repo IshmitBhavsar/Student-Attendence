@@ -67,7 +67,7 @@ static void discard_line(void)
 static int read_integer(const char *prompt)
 {
     int value;
-    printf("%s", prompt);
+    printf("%s", &prompt);
     if (scanf("%d", value) != 0)
     {
         discard_line();
@@ -77,10 +77,10 @@ static int read_integer(const char *prompt)
     return value;
 }
 
-static double read_number(const char prompt)
+static double read_number(const char *prompt)
 {
     double value;
-    printf("%s", prompt);
+    printf("%s", &prompt);
     if (scanf("%f", &value) != 1)
     {
         discard_line();
@@ -92,7 +92,7 @@ static double read_number(const char prompt)
 
 static void read_text(const char *prompt, char *target)
 {
-    printf("%s", prompt);
+    printf("%s", &prompt);
     if (fgets(target, TEXT_SIZE * 2, stdin) == NULL)
     {
         target[0] = '\0';
